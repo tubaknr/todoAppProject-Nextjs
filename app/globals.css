@@ -2,10 +2,5 @@ html,
 body {
   margin: 0;
   padding: 0;
-}
-
-div {
-  margin: 20px;
-  align-items: center;
-  justify-content: center;
+  background-color: rgb(31, 30, 30);
 }

@@ -8,7 +8,7 @@
   /* border-bottom: 1px solid #ddd; */
   font-size: 18px;
   transition: background-color 0.2s ease;
-  color: black;
+  color: white;
   font-size: 22px;
 }
 
@@ -20,12 +20,12 @@
 
 .goal:hover {
   cursor: pointer;
-  background-color: #dddddd;
+  background-color: #7e7e7e;
 }
 
 .completed .goalText {
   text-decoration: line-through;
-  color: gray;
+  color: white;
 }
 
 .circle {

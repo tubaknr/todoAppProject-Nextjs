@@ -1,9 +1,14 @@
 .form {
-  color: black;
-  padding: 8px;
+  /* color: black; */
+  padding-top: 10%;
+  margin-bottom: 5%;
   position: sticky;
-  top: 0;
+  display: flex;
+  /* top: 0; */
   z-index: 100;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   /* border-bottom: 1px solid black; */
 }
 
@@ -16,8 +21,9 @@
 
 .button {
   color: black;
-  padding: 16px 16px;
+  padding: 10px 16px;
   border-radius: 30px;
+  border-color: rgb(255, 255, 255, 0);
   width: 120px;
   cursor: pointer;
   background-color: rgb(162, 11, 175);
@@ -35,7 +41,7 @@
   padding: 8px;
   margin-right: 5px;
   border-radius: 30px;
-  border-color: 1px solid gray;
+  border-color: rgb(255, 255, 255, 0);
   font-size: 20px;
   padding-left: 25px;
   padding-right: 25px;
@@ -71,4 +77,62 @@
   max-width: 600px;
   margin: 20px auto;
   text-align: center;
+}
+
+.allTypes {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+/* .typesContainer { */
+/* text-decoration: none; */
+/* } */
+
+.eachType {
+  border: 1px solid rgb(162, 11, 175);
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: rgb(162, 11, 175);
+}
+
+.inputTypesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.pages {
+}
+
+.active {
+  border: 1px solid #eee;
+  background-color: #eee;
+}
+.allMatrix {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 10px;
+}
+.upperRow {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.bottomRow {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.eachBox {
+  padding: 50px;
+  width: 60%;
+  border: 1px solid rgb(162, 11, 175);
+  text-decoration: none;
+  color: white;
 }
