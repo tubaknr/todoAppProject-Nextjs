@@ -1,0 +1,30 @@
+.container {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text {
+  color: rgb(214, 214, 214);
+  margin-bottom: 2px;
+  font-size: 20px;
+}
+
+.barBackground {
+  width: 80%;
+  height: 25px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px auto;
+  margin-bottom: 30px;
+}
+
+.barFill {
+  height: 100%;
+  background-color: rgb(162, 11, 175);
+  transition: width 0.3s ease;
+}
