@@ -4,6 +4,7 @@ export default function ProgressBar({
   totalGoalsNumber,
   completedGoalsNumber,
 }) {
+  
   const widthCalculation = () => {
     return totalGoalsNumber === 0
       ? "0%"

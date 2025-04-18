@@ -79,3 +79,26 @@
 .pencil:hover {
   color: #306169;
 }
+
+.itemTypes {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  cursor: pointer;
+  /* font-size: 16px; */
+}
+.itemType {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: violet;
+  padding: 5px 10px;
+  border: 1px solid violet;
+  border-radius: 30px;
+}
+
+.typesList {
+  display: flex;
+  gap: 10px;
+}

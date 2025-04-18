@@ -6,7 +6,6 @@ export default function GoalsList({ goalsList, onToggle, onDelete, fixText }) {
   return (
     <>
       <div className={styles.div}>
-        
         <ul className={styles.list}>
           {goalsList.map((goal, index) => (
             <li
@@ -24,6 +23,17 @@ export default function GoalsList({ goalsList, onToggle, onDelete, fixText }) {
                 {goal.completed && "✔"}
               </span>
               <span className={styles.goalText}>{goal.goalText}</span>
+
+              <div className={styles.itemTypes}>
+                <ul className={styles.typesList}>
+                  {goal.types.length !== 0
+                    ? goal.types.map((type, index) => (
+                      <li key={index} className={styles.itemType}>{type}</li>
+                    ))
+                    : null}
+                </ul>
+              </div>
+
               <span
                 className={styles.pencil}
                 onClick={(e) => {

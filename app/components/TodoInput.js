@@ -161,61 +161,61 @@ export default function TodoInput() {
         )}
         {showMatrix && (
           <div className={styles.allMatrix}>
-            {/* <ul className={styles.matrixUl}> */}
-            <div className={styles.upperRow}>
-              <ul className={styles.eachBox}>
-                Urgent & Important
-                {goals
-                  .filter(
-                    (goal) =>
-                      goal.types?.includes("urgent") &&
-                      goal.types?.includes("important")
-                  )
-                  .map((g, i) => (
-                    <li key={i}>{g.goalText}</li>
-                  ))}
-              </ul>
+            <ul className={styles.matrixUl}>
+              <div className={styles.upperRow}>
+                <ul className={styles.eachBox}>
+                  Urgent & Important
+                  {goals
+                    .filter(
+                      (goal) =>
+                        goal.types?.includes("urgent") &&
+                        goal.types?.includes("important")
+                    )
+                    .map((g, i) => (
+                      <li key={i}>{g.goalText}</li>
+                    ))}
+                </ul>
 
-              <ul className={styles.eachBox}>
-                Important & Not Urgent
-                {goals
-                  .filter(
-                    (goal) =>
-                      !goal.types?.includes("urgent") &&
-                      goal.types?.includes("important")
-                  )
-                  .map((g, i) => (
-                    <li key={i}>{g.goalText}</li>
-                  ))}
-              </ul>
-            </div>
-            <div className={styles.bottomRow}>
-              <ul className={styles.eachBox}>
-                Urgent & Not Important
-                {goals
-                  .filter(
-                    (goal) =>
-                      goal.types?.includes("urgent") &&
-                      !goal.types?.includes("important")
-                  )
-                  .map((g, i) => (
-                    <li key={i}>{g.goalText}</li>
-                  ))}
-              </ul>
-              <ul className={styles.eachBox}>
-                Not Important & Not Urgent
-                {goals
-                  .filter(
-                    (goal) =>
-                      !goal.types?.includes("urgent") &&
-                      !goal.types?.includes("important")
-                  )
-                  .map((g, i) => (
-                    <li key={i}>{g.goalText}</li>
-                  ))}
-              </ul>
-            </div>
-            {/* </ul> */}
+                <ul className={styles.eachBox}>
+                  Important & Not Urgent
+                  {goals
+                    .filter(
+                      (goal) =>
+                        !goal.types?.includes("urgent") &&
+                        goal.types?.includes("important")
+                    )
+                    .map((g, i) => (
+                      <li key={i}>{g.goalText}</li>
+                    ))}
+                </ul>
+              </div>
+              <div className={styles.bottomRow}>
+                <ul className={styles.eachBox}>
+                  Urgent & Not Important
+                  {goals
+                    .filter(
+                      (goal) =>
+                        goal.types?.includes("urgent") &&
+                        !goal.types?.includes("important")
+                    )
+                    .map((g, i) => (
+                      <li key={i}>{g.goalText}</li>
+                    ))}
+                </ul>
+                <ul className={styles.eachBox}>
+                  Not Important & Not Urgent
+                  {goals
+                    .filter(
+                      (goal) =>
+                        !goal.types?.includes("urgent") &&
+                        !goal.types?.includes("important")
+                    )
+                    .map((g, i) => (
+                      <li key={i}>{g.goalText}</li>
+                    ))}
+                </ul>
+              </div>
+            </ul>
           </div>
         )}
       </div>
