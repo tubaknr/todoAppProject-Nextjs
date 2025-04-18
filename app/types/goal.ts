@@ -1,5 +1,6 @@
 export type Goal = {
-  goalText: String;
-  completed: Boolean;
+  goalText: string;
+  completed: boolean;
   types: string[];
+  id: number;
 };

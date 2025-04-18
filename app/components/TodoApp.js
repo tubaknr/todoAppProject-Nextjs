@@ -26,7 +26,7 @@ export default function TodoApp() {
         onTypeChange={goalManager.setType}
       />
 
-      <div className={styles.container}>
+      <div className={styles.generalContainer}>
         <ProgressBar
           totalGoalsNumber={goalManager.goals.length}
           completedGoalsNumber={
@@ -36,8 +36,9 @@ export default function TodoApp() {
 
         <h1 className={styles.header}>My Todo List</h1>
 
-        <Buttons onSetShowAll={setShowAll} onSetShowMatrix={setShowMatrix} />
-
+        <div className={styles.buttons}>
+          <Buttons onSetShowAll={setShowAll} onSetShowMatrix={setShowMatrix} />
+        </div>
         {showAll && (
           <div className={styles.goalsWrapper}>
             <GoalsList
@@ -48,7 +49,12 @@ export default function TodoApp() {
             />
           </div>
         )}
-        {showMatrix && <Matrix goalsList={goalManager.goals} />}
+        {showMatrix && (
+          <Matrix
+            goalsList={goalManager.goals}
+            toggleComplete={goalManager.toggleComplete}
+          />
+        )}
       </div>
     </>
   );

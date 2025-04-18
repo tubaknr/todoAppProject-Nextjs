@@ -1,97 +1,83 @@
-.goal {
+.liGoal {
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  padding: 1rem 1.2rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   cursor: pointer;
-  padding: 12px;
-  border-radius: 25px;
-  width: 75%;
-  /* border-bottom: 1px solid #ddd; */
-  font-size: 18px;
-  transition: background-color 0.2s ease;
-  color: white;
-  font-size: 22px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
 }
 
-.goal:hover {
-  cursor: pointer;
-  background-color: #7e7e7e;
+.liGoal:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-2px);
 }
 
-.completed .goalText {
+.completed {
+  background-color: #ebfdeb;
   text-decoration: line-through;
-  color: white;
+  color: #888;
 }
 
 .circle {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
+  border: 2px solid #aaa;
   display: flex;
-  margin-right: 17px;
-  /* flex-direction: row; */
   align-items: center;
   justify-content: center;
-  border: 2px solid #306169;
-  font-size: 14px;
-  color: white;
-  background-color: white;
-  transition: background-color 0.3s ease;
+  margin-right: 0.8rem;
+  color: green;
+  font-weight: bold;
 }
 
 .checked {
-  background-color: #51919e;
-  border-color: #306169;
-  color: white;
-  font-size: 18px;
+  background-color: #caffca;
+  border-color: green;
 }
 
-.delete {
-  margin-right: 0;
-  margin-left: 15px;
-  font-size: 15px;
-  color: rgb(66, 66, 66);
-  cursor: pointer;
-  transition: transform 0.3s ease;
+.goalText {
+  flex-grow: 1;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
 }
 
 .delete:hover {
-  color: #306169;
-  font-weight: bold;
-  transition: transform 1s ease;
+  color: #ff4d4d;
 }
 
-.pencil {
-  display: flex;
-  color: gray;
-  margin-left: auto;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  font-size: 20px;
-  text-decoration: none;
+.pencil,
+.delete {
+  margin-left: 0.8rem;
+  color: #666;
+  transition: color 0.2s;
+  font-size: 1.2rem;
 }
 
 .pencil:hover {
-  color: #306169;
+  color: #0070f3;
 }
 .itemTypes {
-  display: flex;
-  flex-direction: row;
-  margin-right: auto;
-  cursor: pointer;
-  /* font-size: 16px; */
+  margin-left: 1rem;
 }
+
 .itemType {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 15px;
-  background-color: violet;
-  padding: 5px 10px;
-  border: 1px solid violet;
-  border-radius: 30px;
+  background-color: #dfeaff;
+  color: #264c99;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 8px;
 }
 
 .typesList {
   display: flex;
-  gap: 10px;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  list-style: none;
 }

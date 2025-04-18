@@ -1,0 +1,23 @@
+.allButton,
+.matrixButton {
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.allButton:hover,
+.matrixButton:hover {
+  background-color: #4caf50;
+}
+.allButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

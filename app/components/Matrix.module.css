@@ -1,25 +1,47 @@
 .allMatrix {
   display: flex;
-  justify-content: space-evenly;
-  padding: 10px;
-  margin: 10px;
-}
-.upperRow {
-  display: flex;
-  flex-direction: row;
-  color: white;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
+.upperRow,
 .bottomRow {
   display: flex;
-  flex-direction: row;
-  color: white;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .eachBox {
-  padding: 50px;
-  width: 60%;
-  border: 1px solid rgb(162, 11, 175);
-  text-decoration: none;
-  color: white;
+  flex: 1;
+  border: 2px solid #ccc;
+  color: black;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 8px;
+  list-style: none;
+  min-height: 150px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.goal {
+  color: rgb(41, 40, 40);
+  margin: 0.5rem 1rem;
+  list-style: circle;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #e6e5e5;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 85%;
+}
+
+.goal:hover {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+}
+
+.active {
+  text-decoration: line-through;
 }

@@ -3,7 +3,7 @@ import styles from "./Buttons.module.css";
 export default function Buttons({onSetShowAll, onSetShowMatrix}) {
   return (
     <>
-      <div>
+      <div className={styles.allButtons}>
         
           <button
             onClick={() => {

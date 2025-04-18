@@ -3,26 +3,28 @@ import { RxCross1 } from "react-icons/rx";
 import { IoPencilOutline } from "react-icons/io5";
 import { memo } from "react";
 
-function GoalItem({ goal, index, onToggle, onDelete, onFix }) {
-  const handleToggle = () => onToggle(index);
+function GoalItem({ goal, idx, onToggle, onDelete, onFix }) {
+  const handleToggle = () => onToggle(idx);
 
   const handleDelete = (e) => {
     e.stopPropagation();
-    onDelete(index);
+    onDelete(idx);
   };
 
   const handleEdit = (e) => {
     e.stopPropagation(); // bu tıklanmayı tamamlanma gibi algılama, li'e iletme
-    onFix(index);
+    onFix(idx);
   };
 
   return (
     <>
       <div>
         <li
-          key={index}
-          className={`${styles.goal} ${goal.completed ? styles.completed : ""}`}
-          onClick={() => handleToggle}
+          key={idx}
+          className={`${styles.liGoal} ${
+            goal.completed ? styles.completed : ""
+          }`}
+          onClick={() => handleToggle()}
         >
           <span
             className={`${styles.circle} ${
