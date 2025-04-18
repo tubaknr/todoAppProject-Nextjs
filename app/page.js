@@ -1,10 +1,10 @@
-import TodoInput from "./components/TodoInput";
+import TodoApp from "./components/TodoApp";
 
 export default function Home() {
   return (
     <>
       <div>
-        <TodoInput />
+        <TodoApp />
       </div>
     </>
   );
